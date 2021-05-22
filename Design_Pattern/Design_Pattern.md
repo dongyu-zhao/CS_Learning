@@ -7,7 +7,7 @@ Use  has-a strategy design instead of  is-a inheritance hierarchy to
 * No code change to Client class itself when adding or changing algorithm, different client use different configuration when setup(initialization)
 * Strategy only does one thing, have one operation
 ### UML:
-https://lucid.app/lucidchart/invitations/accept/inv_cd4fd193-19ce-454c-9d33-65df36515d6f
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Strategy_Pattern.png)
 ### Problem want to solve:
 This is mainly used for very flexible system where inheritance hierarchy can't solve. The problem is: different implementation of the same behavior is kept in one subclass which is hard for others in the same level to re-use
 ### Example:
@@ -20,7 +20,7 @@ Use push instead of poll for subscription.
 * 1 to many relationship between an observable/subject and observers
 * Once there's a change in observable/subject, it notify all observers
 ### UML:
-https://lucid.app/lucidchart/invitations/accept/inv_4be5a425-5388-4f97-8789-f06b0692eb77?viewport_loc=-449%2C-79%2C2219%2C1077%2C0_0
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Observer_Pattern.png)
 ### Problem want to solve:
 Avoid high request from consistently query from all observers.
 ### Example:
@@ -38,7 +38,7 @@ Weather station and many device which subscribe temperature change service
 * Attach extra responsibility to an object dynamically
 * Provide alternate to expand functionality
 ### UML:
-https://lucid.app/lucidchart/invitations/accept/inv_5f375aa3-912a-4ed1-9f06-b5498b03fbd0?viewport_loc=-11%2C131%2C2219%2C1077%2C0_0
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Decorator_Pattern.png)
 ### Problem want to solve:
 Dynamically (at run time when initialize) apply different extensions to an object in different use case
 ### Example:
@@ -52,7 +52,7 @@ Java InputStream, BufferInputStream, AudioInputStream
 ### Definition:
 Defines an interface that create an instance but let subclass decide which classes is created
 ### UML:
-https://lucid.app/lucidchart/invitations/accept/inv_a871431a-54fe-4afc-a2be-f6120bc9e916?viewport_loc=-91%2C251%2C2219%2C1077%2C0_0
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Factory_Method_Pattern.png)
 ### Problem Want to Solve:
 Have an isolated place to define different initialize logic, aim for the better code reuse 
 ### Example:
@@ -64,6 +64,8 @@ Forest simulation
 * This is applied for situation where only some specific combinations are useful for all related instances.
 ### Definition:
 Provide an interface to create a family of related/dependent instances without specify concrete classes
+### UML:
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Abstract_Factory_Pattern.png)
 ### Example:
 UI combinations for different platform
 
@@ -85,7 +87,7 @@ UI combinations for different platform
 ### Definition:
 Encapsulate commands to an object which let you parameter other objects with different request, queue or log requests
 ### UML:
-https://lucid.app/lucidchart/invitations/accept/inv_d9a54196-4574-4aa9-ac84-0591ba1372aa?viewport_loc=-11%2C-245%2C2219%2C1077%2C0_0
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Command_Pattern.png)
 ### Problem Want to Solve
 Encapsulate the requests and make the rollback easily
 ### Example
@@ -98,7 +100,7 @@ Smart home
 ### Definition:
 Converts an interface to another interface
 ### UML:
-https://lucid.app/lucidchart/invitations/accept/inv_f96f877e-c8a7-41d6-940d-7dc97555b961?viewport_loc=-11%2C-397%2C2219%2C1077%2C0_0
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Adapter_Pattern.png)
 ### Example
 Changeable ThirdParty package
 
@@ -128,7 +130,7 @@ computer start
 * Virtual: Control access of resources which is expensive to create (like cache)
 * Protection: Control access to a resource based on permission
 ### UML
-https://lucid.app/lucidchart/invitations/accept/inv_45ff2464-a923-4ec0-ace7-d111cca453fa?viewport_loc=-11%2C-11%2C2219%2C1108%2C0_0
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Proxy_Pattern.png)
 ### Example:
 Lazy load
 
@@ -141,7 +143,7 @@ Lazy load
 ### Definition:
 Decouple abstraction from implementation so that the two can vary independently
 ### UML
-https://lucid.app/lucidchart/invitations/accept/inv_4b85d44f-07f2-4294-8c9a-fc1a392f9aa1?viewport_loc=-11%2C-11%2C2219%2C1077%2C0_0
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Bridge_Pattern.png)
 ### Example:
 Website view and resource
 
@@ -153,7 +155,7 @@ Website view and resource
 ### Definition:
 Define the skeleton of the algorithm and defer the implementation to subclasses which let the subclasses could change different step in the algorithm without changing the interface
 ### UML
-https://lucid.app/lucidchart/invitations/accept/inv_f80a2149-d3c0-4032-bc76-a438c21a26dc?viewport_loc=-11%2C-59%2C2219%2C1077%2C0_0
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Template_Pattern.png)
 ### Example
 hooks operation, poster
 
@@ -164,7 +166,7 @@ hooks operation, poster
 ### Definition:
 Make composite structures to a tree structure so that single object or composite objects could be treat uniformly.
 ### UML
-https://lucid.app/lucidchart/invitations/accept/inv_16c7f173-4912-4abf-be02-03990ca2796b?viewport_loc=-247%2C288%2C2219%2C1077%2C0_0
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Composite_Pattern.png)
 ### Example
 MVC render()
 
@@ -176,7 +178,7 @@ MVC render()
 ### Definition
 Using an iterator to traverse a container and access the container's elements
 ### UML
-![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/Iterator%20Pattern.png)
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/UML/Iterator%20Pattern.png)
 ### Example
 Java List, Game weapon equipment
 
