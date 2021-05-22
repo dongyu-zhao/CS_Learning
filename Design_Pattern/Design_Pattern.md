@@ -176,7 +176,7 @@ MVC render()
 ### Definition
 Using an iterator to traverse a container and access the container's elements
 ### UML
-https://lucid.app/lucidchart/invitations/accept/inv_a29dd4c0-be1d-4173-a565-6867d6bfb43f?viewport_loc=-11%2C-32%2C2219%2C1001%2C0_0
+![](https://raw.githubusercontent.com/dongyu-zhao/CS_Learning/main/Design_Pattern/Iterator%20Pattern.png)
 ### Example
 Java List, Game weapon equipment
 
